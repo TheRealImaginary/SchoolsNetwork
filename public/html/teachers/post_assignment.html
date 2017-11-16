@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Post Assignment</title>
+		<!-- Scripts Go Here -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../teachers/post_assignment.js"></script>
+	</head>
+	<body>
+
+		<h1>Welcome To The Teacher Hub</h1>
+		<p>Please Enter The Necessary Data</p>
+
+		<form action="/teachers/post_assignment">
+			Due Date: <input type="date" name="duedate">
+			<br>
+			Content: <textarea rows="4" cols="50" name="content" type = "text"></textarea>
+			<br>
+			Course_Code: <input type="text" name="course_code">
+			<br>
+			E-mail:<input type="text" name="email">
+			<br>
+			<input type="submit" value="post">
+			<br>
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Welcome</title>
+		<!-- Scripts Go Here -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+
+	<body>
+		
+		<a href="/teachers/teacher_signup.html"><h2>Teacher</h2><a>
+		<a href="/parents/parent_signup.html"><h2>Parent</h2></a>
+
+		<form id="login" action="/login" method="POST">
+			Username:<br>
+			<input type="text" name="username" required="true">
+			<br>
+			Password:<br>
+			<input type="password" name="password" required="true">
+			<br>
+			<input type="submit" name="Submit">
+			<select name="options">
+				<option value="Teacher">Teacher</option>
+				<option value="Student">Student</option>
+				<option value="Parent">Parent</option>
+				<option value="Admin">Admin</option>
+			</select>
+			<br>
+		</form>
+		
+		<br>
+
+		<form id="search">
+			Name:
+			<input type="text" name="name">
+			<br>
+			Address:
+			<input type="text" name="address">
+			<br>
+			Type:
+			<input type="text" name="type">
+			<br>
+			<input type="submit" name="search" value="Search">
+			<br>	
+		</form>
+		
+		<br>
+
+		<form id="certain">
+			School Email:
+			<input type="text" name="semail">
+			<br>
+			<input type="submit" name="Submit" value="Search">
+			<br>
+		</form>
+		
+		<br>
+
+		<a href="view_all_schools.html"><button>View All Schools</button></a>
+
+		<br>
+
+		<table id="result" border="2"></table></table>
+		
+		<br>
+
+		<table id="reviews" border="2"></table>	
+		
+		<br>
+		
+		<table id="announcements" border="2"></table>
+
+	</body>
+
+</html>

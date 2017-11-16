@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>View Enrolled Students</title>
+		<!-- Scripts Go Here -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../admins/view_enrolled.js"></script>
+	</head>
+	<body>
+
+		<h1>Enrolled Students</h1>
+		<form id="form" action="/admins/view_enrolled" method="POST">
+			School Email:
+			<input type="text" name="school_email">
+			<br>
+			<input type="submit" name="button" value="Go">
+		</form>
+
+		<table id="students" border="2"></table>
+		
+		<form action= '/admins/verify_student' method="POST">
+  			School Email:<br>
+  			<input type="text" name="school_email">
+  			<br>
+  			SSN:<br>
+  			<input type="text" name="ssn">
+  			<br>
+  			Username:<br>
+  			<input type="text" name="username">
+  			<br>
+  			Password:<br>
+  			<input type="text" name="password">
+  			<br><br>
+  			<input type="submit" value="Submit">
+		</form> 
+
+	</body>
+</html>

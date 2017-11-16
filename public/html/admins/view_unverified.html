@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View unverified Teacher</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../admins/view_unverified.js"></script>
+  </head>
+  <body>
+
+    <h1>Unverifed teachers</h1>
+    <form id="form" action="/admins/view_unverified" method="POST">
+  		School Email:
+  		<input type="text" name="school_email">
+  		<br>
+  		<input type="submit" name="button" value="Go">
+  	</form>
+
+    <table id="unverified" border="2"></table>
+
+    <form action= "/admins/verify_teacher" method="POST">
+      Username:<br>
+      <input type="text" name="username">
+      <br>
+      Teacher Email:<br>
+      <input type="text" name="teacher_email">
+      <br>
+      School Email:<br>
+      <input type="text" name="school_email1">
+      <br>
+      Password:<br>
+      <input type="text" name="password">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form> 
+
+</body>
+</html>
+

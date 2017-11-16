@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create activity</title>
+	</head>
+	<body>
+
+		<h1>Create activity</h1>
+		<form action= /admins/create_activity method="POST">
+		  Date:<br>
+		  <input type="date" name="date">
+		  <br>
+		  Admin Email:<br>
+		  <input type="text" name="admin_email">
+		  <br>
+		  Location:<br>
+		  <input type="text" name="location">
+		  <br>
+		  Description:<br>
+		  <input type="text" name="description">
+		  <br>
+		  Type:<br>
+		  <input type="text" name="type">
+		  <br>
+		  Equipment:<br>
+		  <input type="text" name="equipment">
+		  <br>
+		  Teacher Email:<br>
+		  <input type="text" name="teacher_email">
+		  <br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+
+		<form action= /admins/assign_teacher_activity method="POST">
+		  New Teacher Email:<br>
+		  <input type="text" name="teacher_email_edited">
+		  <br>
+		  Activity ID:<br>
+		  <input type="number" name="activity_id">
+		  <br>
+		  Admin Email:<br>
+		  <input type="text" name="admin_email">
+		  <br><br>
+		  <input type="submit" value="Submit_edited">
+		</form> 
+
+	</body>
+</html>
+

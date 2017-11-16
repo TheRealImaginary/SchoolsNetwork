@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View applications</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../admins/view_applications.js"></script>
+	</head>
+	<body>
+
+		<h1>View Applications</h1>
+		<form id="form" action="/admins/view_applications" method="POST">
+			School Email:
+			<input type="text" name="school_email">
+			<br>
+			<input type="submit" name="button" value="Go">
+		</form>
+
+		
+		<table id="applications" border="2"></table>
+
+		<!-- Select from the data base then reject or accept by button, Is this possible? -->
+		<form action="/admins/reply_applications" method="POST">
+		  School_email:<br>
+		 <input type="text" name="school_email">
+          <br>
+          Student SSN:<br>
+          <input type="text" name="ssn">
+          <br>
+          <select name="options">
+				<option value="accepted">Accept</option>
+				<option value="rejected">Reject</option>
+			</select>
+		  <input type="submit" name="Submit">
+			
+		</form> 
+
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View My Reviews</title>
+		<!-- Scripts Go Here -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../parents/view_my_reviews.js"></script>
+	</head>
+	<body>
+		<form id="form" action="/parents/view_school_reviews" method="POST">
+			Username :
+			<input type="text" name="username">
+			<br>
+			<input type="submit" name="button" value="Go">
+		</form>
+		
+		<table id="reviews" border="1.1"></table>
+	</body>
+</html>

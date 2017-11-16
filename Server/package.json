@@ -1,0 +1,23 @@
+{
+  "name": "db_project",
+  "version": "1.0.0",
+  "description": "Server written in nodejs for DB project (Semester 5)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodejs app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql"
+  ],
+  "author": "Team 19 (Mazen, Ali, Samy)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "nodemon": "^1.11.0"
+  }
+}

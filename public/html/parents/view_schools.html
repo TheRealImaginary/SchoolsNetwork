@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>View Accepted Schools</title>
+		<!-- Scripts Go Here -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../parents/view_schools.js"></script>
+
+	</head>
+
+	<body>
+		<form id="form" action="/parents/view_accepted_schools" method="POST">
+			Username :
+			<input type="text" name="username">
+			<br>
+			<input id="button" type="submit" name="button" value="Go">
+			<br>		
+		</form>
+
+		<table id="schools" border="2"></table>
+	</body>
+
+</html>
